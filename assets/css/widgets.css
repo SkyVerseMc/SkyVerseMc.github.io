@@ -1,0 +1,89 @@
+/* Widgets (non-minecraft elements) */
+
+.menu-button {
+    border: none;
+    align-items: flex-end;
+}
+
+.menubutton {
+    float: right;
+    position: relative;
+}
+
+.menubutton-content {
+    display: none;
+    position: absolute;
+    background: url("../images/dirt.png");
+    background-size: fill;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menubutton-content a {
+    color: white;
+    padding: 5px 9px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-button:hover, .menu-button:focus {
+    transform: scale(1.05) perspective(1px);
+}
+
+.menubutton-content a:hover {
+    background: url("../images/dirt_d.png")
+}
+
+.menubutton:hover .menubutton-content {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu-button {
+        margin-top: 4vw;
+        margin-right: 5vw;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .menubutton-content {
+        min-width: 1vw;
+        margin-right: 30vw;
+    }
+
+    .menubutton-content a {
+        font-size: 2.75vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .menu-button:focus {
+        transform: scale(1.05) perspective(1px);
+    }
+
+    .menubutton-content a:focus {
+        background: url("../images/dirt_d.png")
+    }
+
+    .menubutton:focus .menubutton-content {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .menubutton-content {
+        min-width: 150px;
+    }
+
+    .menu-button {
+        width: 100%;
+        height: 100%
+    }
+
+    .menubutton {
+        margin-right: 4vw;
+    }
+}

@@ -1,0 +1,68 @@
+/* Minecraft color code stylesheet */
+
+/* Font color */
+
+.§4, .dark_red {
+    color: #BE0000;
+}
+.§c, .red {
+    color: #FE3f3f;
+}
+.§6, .gold {
+    color: #D9A334;
+}
+.§e, .yellow {
+    color: #FEFE3F;
+}
+.§2, .dark_green {
+    color: #00BE00;
+}
+.§a, .green {
+    color: #3FFE3F;
+}
+.§b, .aqua {
+    color: #3FFEFE;
+}
+.§3, .dark_aqua {
+    color: #00BEBE;
+}
+.§1, .dark_blue {
+    color: #0000BE;
+}
+.§9, .blue {
+    color: #3F3FFE;
+}
+.§d, .light_purple {
+    color: #FE3FFE;
+}
+.§5, .dark_purple {
+    color: #BE00BE;
+}
+.§f, .white {
+    color: #ffffff;
+}
+.§7, .gray {
+    color: #BEBEBE;
+}
+.§8, .dark_gray {
+    color: #3F3F3F;
+}
+.§0, .black {
+    color: #000000;
+}
+
+
+/* Font style */
+
+.§l, .bold {
+    font-weight: bold;
+}
+.§o, .italic {
+    font-weight: oblique;
+}
+.§n, .underlined {
+    text-decoration: underline;
+}
+.§m, .strikethrough {
+    text-decoration: line-through;
+}

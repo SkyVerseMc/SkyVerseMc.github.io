@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/assets/resources/images/icon.png" type="image/png">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0" />
+
+    <title>About me</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/widgets.css" />
+
+    <script src="/assets/scripts/obfuscated-text.js" type="text/javascript"></script>
+    <script src="/assets/scripts/window.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        animate_text(40);
+    </script>
+
+    <style>
+        @media only screen and (max-width: 600px) {
+            .icon {
+                width: 50px;
+            }
+
+            #row {
+                display: block;
+            }
+
+            .space {
+                display: none;
+            }
+
+            .top {
+                width: 100%;
+                height: 200%;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            .icon {
+                width: 85px;
+            }
+
+            #row {
+                display: inline-block;
+            }
+
+            .space {
+                display: inline-block;
+            }
+
+            #icons {
+                margin-left: -2vw;
+            }
+
+            #content {
+                position: absolute;
+                left: 30vw;
+                top: 7vw;
+            }
+
+            section {
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section style="background-image: url('../../assets/images/animated-logo/bg.png'); background-size: cover;">
+
+        <header class="header">
+
+            <div class="menubutton" style="width: 100px;">
+
+                <img class="menu-button noselect" width="100px" height="100px" src="/assets/icons/menu.png"
+                    onclick="toggleFullscreen();">
+
+                <div class="menubutton-content" style="float: right;">
+                    <a href="/">
+                        <i18n class="mcfont">Home</i18n>
+                    </a>
+                    <a href="/pages/FAQ">
+                        <i18n class="mcfont">FAQ</i18n>
+                    </a>
+                    <a href="https://github.com/SkyVerseMc/skyversemc.github.io/issues/new">
+                        <i18n class="mcfont">Report a bug</i18n>
+                    </a>
+                    <a href="https://www.google.com/search?q=how+to+get+help">
+                        <i18n class="mcfont">Help</i18n>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <a href="/">
+            <img class="upleft noselect" src="/assets/images/animated-logo/arrows.svg"
+                title="Why this logo ? I dunno it came like this in my mind" />
+        </a>
+
+        <div id="content" class="mcfont noselect">
+
+            <ul>
+                <h1>Hello !</h1>
+                <li>My name is <b>Sky</b>, I had no idea for my name, so I stole the one from one of my projects.</li>
+                <br>
+                <li>I started coding in the French equivalent of 6th grade ("Sixième") ; I started learning some
+                    easy-to-create games and some batch scripts all by myself.</li>
+                <br>
+                <li>The same year discovered Minecraft and fell in love with the game, and I wanted - and started - to
+                    mod it :)</li>
+                <li>=> So the first true language (batch and vbs aside) I learnt was Java.</li>
+                <br>
+                <li>Buuut... I have <b>waayyy too</b> many ideas (like, a lot) and not enough time to realise them, so I
+                    started using a checklist app (that no longer exists in this version) to note all my ideas, allowing
+                    me some time to think about them.</li>
+            </ul>
+
+            <div style="height: 100px;"></div>
+
+            <center>
+                <div id="icons" style="padding-bottom: 5vw;">
+
+                    <div id="row">
+
+                        <img class="noselect" src="/assets/images/grass.png"
+                            title="Yeah, I loooove Minecraft, even if Mojang goes bananas these days" />
+                        <img class="noselect" src="/assets/icons/tails_80px.png" title="Retro gaming enthusiast" />
+                    </div>
+
+                    <img class="space noselect" width="80px" />
+
+                    <a href="https://github.com/SkyVerseMc">
+                        <img class="s-icon icon" alt="GitHub" focusable="false" src="/assets/icons/social/github.svg"
+                            title="My github" /></a>
+                    <a href="https://www.youtube.com/@SkyVerseMc">
+                        <img class="s-icon icon" alt="YouTube" focusable="false" src="/assets/icons/social/youtube.svg"
+                            title="My channel :D (empty, I know)" /></a>
+                    <a>
+                        <img class="s-icon icon" style="filter: grayscale(1);" alt="Discord" focusable="false"
+                            src="/assets/icons/social/discord.svg" title="My discord server (not finished yet)" /></a>
+                    <a href="https://twitch.tv/SkyVerseMc_">
+                        <img class="s-icon icon" alt="Twitch" focusable="false" src="/assets/icons/social/twitch.svg"
+                            title="My twitch" />
+                    </a>
+                    <a>
+                        <img class="s-icon icon" style="filter: grayscale(1); " alt="Reddit" focusable="false"
+                            src="/assets/icons/social/reddit.svg" title="My reddit profile (unavailable)" />
+                    </a>
+                    <a>
+                        <img class="s-icon icon" alt="Twitter" style="filter: grayscale(1);" focusable="false"
+                            src="/assets/icons/social/twitter.svg" title="My twitter profile (unavailable)" />
+                    </a>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <div style="position: absolute; width: 100vw;">
+
+        <div class="background noselect">
+            <span class="mcfont copyright largefooter y">&copy; 2027 — SkyVerseMc</span>
+            <span class="mcfont copyright largefooter §o" id="obf">coucou</span>
+            <span class="mcfont copyright dnd">Copyright SkyVerseMc. Do not distribute!</span>
+        </div>
+    </div>
+</body>
+
+</html>

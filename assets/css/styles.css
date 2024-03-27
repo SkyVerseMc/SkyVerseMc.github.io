@@ -1,0 +1,327 @@
+/* Website's main style */
+
+@font-face {
+	font-family: 'minecraftia';
+	src: url('../font/minecraftia-webfont.woff') format('woff');
+}
+
+.mcfont {
+	font-family: minecraftia;
+}
+
+.noselect {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+    -webkit-user-drag: none;
+}
+
+.arrows {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20vw;
+}
+
+.social {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30vw;
+}
+
+.line>a {
+	padding-left: 1vw;
+	padding-right: 1vw;
+}
+
+.s-icon {
+	width: 20%;
+	height: 20%;
+}
+
+body {
+	margin: 0 auto;
+	-ms-overflow-style: none;
+	background: url("../images/dirt.png");
+	background-size: fill;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.top, .top-min {
+	background-image: url('../images/animated-logo/bg.png');
+    background-size: cover;
+}
+
+section.page {
+	background-image: url('../images/dirt.png');
+    background-size: fill;
+}
+
+.grass {
+	background-image: url('../images/grass.png');
+    background-size: fill;
+}
+
+.rotate:hover {
+	animation: rotation 10s infinite linear;
+}
+
+.clicked {
+	animation: zoom .33s forwards linear;
+}
+
+.unclicked {
+	animation: dezoom .33s forwards linear;
+}
+
+.text {
+	padding: 3vw 10vw;
+}
+
+@keyframes zoom {
+	from {
+		transform: scale(1) rotate(1deg);
+	} to {
+		transform: scale(2) rotate(180deg);
+	}
+}
+
+@keyframes dezoom {
+	from {
+		transform: scale(2) rotate(1deg);
+	} to {
+		transform: scale(1) rotate(180deg);
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(359deg);
+	}
+}
+
+.background {
+	background:	url('../images/dirt_d.png');
+    background-size: fill;
+	justify-content: space-between;
+	display: flex;
+	color: white;
+	width: auto;
+}
+
+section.main {
+	background-image: url('../images/dirt_d.png');
+    background-size: fill;
+	color:white;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.icon img {
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover img {
+    transform: scale(1.05);
+}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.top-min {
+    width: 100vw;
+    height: 10vh;
+}
+
+#content {
+    color: white;
+    line-height: 1.8;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#obf {
+        visibility: hidden;
+        display: none;
+    }
+
+	.social {
+		margin-top: 12.5vh;
+	}
+
+	.arrows {
+		margin-top: 7.5vh;
+		width: 20vh;
+	}
+
+    #content{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+	section.top {
+		width: 100vw;
+		height: 33vh;
+	}
+
+    .line>a>img {
+        width: 32px;
+    }
+
+    .upleft {
+        margin-top: 5vw;
+        margin-left: 5vw;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .largefooter {
+        display: none;
+    }
+    
+    .dnd {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+	td {
+		display: block;
+		padding-top: 30px;
+	}
+
+	.sd {
+		display: flex;
+	}
+
+	.bd {
+		display: none;
+	}
+
+    .line {
+
+        width: 32vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+	.arrows {
+		margin-top: 15%;
+		width: 30vh;
+	}
+
+	.social {
+		margin-top: 22vh;
+	}
+
+	section.top {
+		width: 100vw;
+		height: 66vh;
+	}
+
+	td {
+		display: inline-block;
+		padding-top: 10px;
+	}
+
+	.sd {
+		display: block;
+	}
+
+	.bd {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.arrows {
+		margin-top: 35vh;
+		width: 20vw;
+	}
+
+	.social {
+		margin-top: 42vh;
+	}
+
+	section.top {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.copyright {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .upleft {
+        position: absolute;
+        left: 90px;
+        top: 90px;
+        width: 20vw;
+    }
+
+    #content {
+        position: absolute;
+        left: 30vw;
+        margin-right: 15vw;
+        top: 7vw;
+    }
+
+    td {
+		display: inline-block;
+        padding: 80px;
+    }
+
+    th {
+        padding: 50px;
+    }
+
+    .line>a>img {
+        width: 4.3vw;
+    }
+
+    section.main {
+        height: 40vh;
+        margin-top: 35px;
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+
+	.sd {
+		display: none;
+	}
+
+	.bd {
+		display: flex;
+	}
+}
